@@ -1,0 +1,174 @@
+/* Universal style */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'poppins', sans-serif;
+    font-size: 24px;
+    text-align: center;
+}
+
+h3{
+    padding: 10px;
+    font-weight: bold;
+}
+
+
+/* header style */
+
+.headerContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+h1{
+    margin: 20px;
+}
+h4{
+    margin-bottom: 20px;
+}
+/* inline-block makes pretty good sense on buttons I’d say */
+
+nav a{
+    display: inline-block;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* top, right, bottom, left */
+    padding: 15px 20px 10px 20px;
+    color: black;
+}
+
+/* Mission Style */
+
+.missionContainer{
+    background-image: url(./resources/images/building.jpg);
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* position: absolute; */
+}
+
+/* An element that has the display property set to block starts on a new line 
+and takes up the available screen width */
+
+.missionContent{
+    width: 100%;
+    height: 130px;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+}
+
+
+.missionContainer .missionContent{
+    margin: auto;
+}
+
+/* portfolio syle */
+
+img{
+    width: 300px;
+    height: 300px;
+}
+
+.portfolioContainer{
+    width: 100%;
+    min-height: 500px;
+}
+
+.portfolioTitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.portfolioImageContainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+        /* top, right, bottom, left */
+    margin-top: 40px;
+    gap: 30px 50px;
+}
+
+
+.portfolioImage{
+    display: flex;
+    align-items: center;
+}
+
+figcaption{
+    padding-left: 30px;
+}
+
+/* Team style */
+
+.teamContainer{
+    width: 100%;
+    min-height: 520px;
+    background-image: url('./resources/images/oldbuilding.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.team{
+    margin: auto;
+    padding-top: 30px;
+    display: inline-block;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #ffffff;
+    text-shadow: 2px 1px black;
+}
+
+.photo{
+    margin: auto;
+    width: 250px;
+    height: 350px;
+}
+
+/* Footer  */
+
+.footerContainer{
+    width: 100%;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footerContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+} 
+
+.footerContent p{
+    padding-bottom: 15px;
+}
